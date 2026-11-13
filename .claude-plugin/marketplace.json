@@ -1,0 +1,16 @@
+{
+  "name": "ds-project-layout",
+  "owner": {
+    "name": "shashankg7"
+  },
+  "metadata": {
+    "description": "Cookiecutter Data Science layout skill for Claude Code: keeps data-science and ML repositories organized."
+  },
+  "plugins": [
+    {
+      "name": "ds-project-layout",
+      "source": "./plugins/ds-project-layout",
+      "description": "Cookiecutter Data Science (v2) layout and code-placement rules for data-science and ML repositories."
+    }
+  ]
+}
