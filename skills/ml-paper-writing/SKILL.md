@@ -1,6 +1,6 @@
 ---
 name: ml-paper-writing
-description: Write publication-ready ML/AI papers for NeurIPS, ICML, ICLR, ACL, AAAI, COLM. Use when drafting papers from research repos, structuring arguments, verifying citations, or preparing camera-ready submissions. For systems venues (OSDI, NSDI, ASPLOS, SOSP), use systems-paper-writing instead.
+description: Draft, revise or review research papers. Includes an author style profile and review procedure for IR, recommender-systems and off-policy-evaluation papers (SIGIR, KDD, RecSys, WSDM, CIKM, WWW, ICTIR, TMLR, theses), plus publication-ready guidance for NeurIPS, ICML, ICLR, ACL, AAAI and COLM. Use for abstracts, introductions, related work, math exposition, experiments, draft reviews, rebuttals, citations, LaTeX templates and camera-ready. For systems venues (OSDI, NSDI, ASPLOS, SOSP), use systems-paper-writing.
 version: 1.2.0
 author: Orchestra Research
 license: MIT
@@ -9,6 +9,66 @@ dependencies: [semanticscholar, arxiv, habanero, requests]
 ---
 
 # ML Paper Writing for Top AI Conferences
+
+## Author style profile (read first when writing in this style)
+
+When drafting, revising or reviewing papers in the author style this skill records (IR,
+recommender-systems and off-policy-evaluation papers for SIGIR, KDD, RecSys, WSDM, CIKM,
+WWW, ICTIR, workshops, TMLR or a thesis), this section and
+[references/author-style.md](references/author-style.md) **override** the generic guide
+below: do not force a five-sentence abstract, exact numbers in the abstract, a
+contribution-first opening, equations in the introduction, or stronger claims to fit a
+template. Current instructions, the current manuscript and verified venue requirements take
+precedence over both. For other papers, use the generic guide.
+
+[references/author-style.md](references/author-style.md) covers voice, venue structure,
+abstract/intro/related-work moves, notation and exposition, theory, an experiments review
+checklist, prose mechanics, citations and recurring errors. Read it once per turn for any
+work in this style.
+
+### How to review a draft
+- **Read the whole draft first.** If there is a code or results repo, read the methods and
+  recompute every headline number from the archived results before commenting on claims.
+- **Section by section, in the author's order** (abstract → intro → related work → method →
+  experiments → conclusion). Stop after each section and wait for the author's reaction.
+- **Edit around the author's text, not over it.** Do not rewrite sections the author is
+  happy with.
+  - First give a find → replace list keyed to the author's exact sentences, labelled
+    **Must fix / Should fix / Optional**.
+  - When asked for "the edited version", give the full section with only those edits applied.
+  - Full rewrites only when asked. If the author says a paragraph's placement is fine, keep it
+    and name the sentences to replace.
+- **Scope to the question.** "Any major error?" → correctness problems only; say clearly when
+  there are none; list wording issues separately and briefly. "Can the writing be
+  improved?" → wording, structure, consistency.
+- **Own mistakes.** If a later pass finds something an earlier pass missed, say "I missed
+  this in my last pass" up front.
+
+### Output format
+- Short bullets for issues, then LaTeX-ready text in code blocks.
+- Placeholder `\cite{}` keys in `firstauthorYEARword` form, noting which need new .bib entries.
+- Offer BibTeX checked against the publisher, DBLP or arXiv; mark any taken from memory as
+  unchecked.
+- No long preambles and no recap of steps taken.
+
+### Editing contract and verification
+- A readability-only request means surgical prose edits. Preserve mathematical expressions,
+  proofs, formal statements, claims and qualifiers, numbers, citations, tables, figures,
+  captions and layout unless the author authorizes otherwise. A layout-only request does not
+  authorize prose changes.
+- Flag suspected scientific errors separately; never silently fix or reframe them. Never
+  strengthen a claim through wording ("combine" → "introduce", dropping "can").
+- Work from the current source, not a stale export. Keep a before snapshot, review the full
+  diff, and check protected content is unchanged. For live Overleaf, guard against
+  intervening edits, read back applied text, compile, and inspect affected pages and the
+  page-budget boundary. Do not reactivate commented-out text or close scientific TODOs by
+  inventing evidence.
+- Report the actual scope and checks done, not a promise of exact reproduction or of
+  remembering preferences permanently.
+
+---
+
+## Generic guide (Orchestra Research)
 
 Expert-level guidance for writing publication-ready papers targeting **NeurIPS, ICML, ICLR, ACL, AAAI, COLM**. This skill combines writing philosophy from top researchers (Nanda, Farquhar, Karpathy, Lipton, Steinhardt) with practical tools: LaTeX templates, citation verification APIs, and conference checklists.
 

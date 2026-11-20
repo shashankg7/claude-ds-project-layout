@@ -2,6 +2,8 @@
 
 This reference compiles writing advice from prominent ML researchers including Neel Nanda, Andrej Karpathy, Sebastian Farquhar, Zachary Lipton, and Jacob Steinhardt.
 
+When writing in the author style this skill records, [author-style.md](author-style.md) takes precedence over the general advice below.
+
 ---
 
 ## Contents
