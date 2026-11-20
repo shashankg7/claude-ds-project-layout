@@ -1,9 +1,0 @@
-{
-  "name": "ds-project-layout",
-  "version": "1.0.0",
-  "description": "Cookiecutter Data Science (v2) layout and code-placement rules for data-science and ML repositories.",
-  "author": { "name": "shashankg7" },
-  "homepage": "https://github.com/shashankg7/claude-ds-project-layout",
-  "license": "MIT",
-  "keywords": ["data-science", "machine-learning", "project-structure", "cookiecutter"]
-}

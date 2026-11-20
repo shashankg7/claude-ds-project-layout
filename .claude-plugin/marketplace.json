@@ -1,16 +1,27 @@
 {
-  "name": "ds-project-layout",
+  "name": "ds-project-skills",
   "owner": {
     "name": "shashankg7"
   },
   "metadata": {
-    "description": "Cookiecutter Data Science layout skill for Claude Code: keeps data-science and ML repositories organized."
+    "description": "Claude Code skills for data-science and ML research: repository layout and paper writing."
   },
   "plugins": [
     {
       "name": "ds-project-layout",
-      "source": "./plugins/ds-project-layout",
-      "description": "Cookiecutter Data Science (v2) layout and code-placement rules for data-science and ML repositories."
+      "source": "./",
+      "strict": false,
+      "description": "Cookiecutter Data Science (v2) layout and code-placement rules for data-science and ML repositories.",
+      "license": "MIT",
+      "skills": ["./skills/ds-project-layout"]
+    },
+    {
+      "name": "ml-paper-writing",
+      "source": "./",
+      "strict": false,
+      "description": "Writing publication-ready ML/AI papers for NeurIPS, ICML, ICLR, ACL, AAAI and COLM, with LaTeX templates and citation checks. From Orchestra Research's AI-Research-SKILLs (MIT).",
+      "license": "MIT",
+      "skills": ["./skills/ml-paper-writing"]
     }
   ]
 }
